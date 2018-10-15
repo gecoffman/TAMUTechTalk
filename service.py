@@ -5,8 +5,8 @@ app = Flask( __name__ )
 
 
 @app.route( '/' )
-def returnSingle():
-	return "hello world" 
+def landingPage():
+	return "To query data, add /forex/ to the url followed by the currency pair.\nExample: /forex/USDJPY" 
 
 @app.route( '/forex/<ccyPair>' )
 def returnCCYData( ccyPair ):
