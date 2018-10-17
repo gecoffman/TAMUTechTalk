@@ -10,6 +10,7 @@ def loadAllData():
     d = {}
     dataFiles = [ x for x in os.listdir('data') if x.endswith('.csv') ]
     for f in dataFiles:
+        print 'reading file: %s' % f
         symbol = f.split('.')[0]
         df = pd.read_csv( 'data/' + f )
         df['Date'] = [ datetime.strptime( x, '%m/%d/%y' ) for x in df['Date'] ]
