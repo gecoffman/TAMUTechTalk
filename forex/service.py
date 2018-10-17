@@ -3,10 +3,15 @@ import os.path
 from flask import Flask
 app = Flask( __name__ )
 
+PAIRS = [ x.split('.')[0] for x in os.listdir('jsonData') if x.endswith( 'json' ) ]
 
 @app.route( '/' )
 def landingPage():
-	return "To query data, add /forex/ to the url followed by the currency pair.\nExample: /forex/USDJPY" 
+    message = "<html><body><p>To query data, add /forex/ to the url followed by the currency pair.<br>\nExample: /forex/USDJPY<br><br>Available pairs:<br>"
+    for p in PAIRS:
+        message += "%s<br>\n" % p
+    message += "</body></html>"
+    return message
 
 @app.route( '/forex/<ccyPair>' )
 def returnCCYData( ccyPair ):
