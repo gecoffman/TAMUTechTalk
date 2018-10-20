@@ -26,7 +26,6 @@ While the service is running, run the solution with the following command.
 
 *** Output
 
-When the above solutions are run, they should populate the directory with CSV files containing the data. 
-
+When the above solutions are run, they should populate the directory with CSV files for the Equities data and JSON files for the Forext data. 
 
 
