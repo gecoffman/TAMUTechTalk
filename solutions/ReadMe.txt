@@ -22,9 +22,11 @@ directory for instructions)
 
 While the service is running, run the solution with the following command. 
 
->> pytho forexScraper.py 
+>> python forexScraper.py 
 
+*** Output
 
+When the above solutions are run, they should populate the directory with CSV files containing the data. 
 
 
 
