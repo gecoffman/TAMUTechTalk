@@ -10,10 +10,10 @@ forex/
 - Contains the files to serve out forex (foreign exchange) data on your local
 computer on a specifie port
 
-solutions
+solutions/
 - equitiesScraper contains the solution to scrape data from the equtities server 
 
-- forextScraper contains the solutuon to scrape data from the forex server
+- forexScraper contains the solutuon to scrape data from the forex server
 
 
 *** Instructions to run each of the above files is in the ReadMe.txt of the directory ****
